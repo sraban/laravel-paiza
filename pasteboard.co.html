@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <title>Pasteboard &mdash; Easy Image Uploads</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Super simple and lightning fast image sharing. Upload clipboard images with Copy &amp; Paste and image files with Drag &amp; Drop">
+    <script src="https://s.nitropay.com/ads-126.js"></script>
+    <script>
+      window.nads = window.nads || {
+        createAd: function() {}
+      }
+    </script>
+    <link rel='stylesheet' href='/css/main-d3d8c21f1123dc9daa875c58f081173f.css'>
+    <script src='/js/head-4cc2cb06676487938a733be973747c36.js'></script>
+    <!-- Globals -->
+    <script type="text/javascript">
+      window.SOCKET_PORT = 4000;
+      window.RECENT_UPLOADS = [];
+    </script>
+    
+      <!-- Google Analytics -->
+      <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-34180422-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+      </script>
+    
+    <script>
+      (adsbygoogle = window.adsbygoogle || []).push({
+        google_ad_client: "ca-pub-7940233671791385",
+        enable_page_level_ads: true
+      });
+    </script>
+  </head>
+  <body data-page="Main Page">
+    <div class="sidebar sidebar-left">
+        <div class="nad" id="main-top-side" style="max-width: 300px;"></div>
+        <script type="text/javascript">
+        nads.createAd('main-top-side', {
+          "floor": 0.05,
+          "refreshLimit": 10,
+          "refreshTime": 60,
+          "report": {
+            "enabled": true,
+            "wording": "Report Ad",
+            "position": "fixed-bottom-right"
+          }
+        });
+        </script>
+    </div>
+    <div class="sidebar sidebar-right">
+    </div>
+    <section class="splash">
+      <h1>Pasteboard<span> - Easy Image Uploads</span></h1>
+      <div class="splash-instructions">
+        <div class="splash-image">
+          <div class="image-regular"></div>
+          <div class="image-shine"></div>
+        </div>
+        <div class="desktop-splash">
+          <p>
+            <span class="copyandpaste">Copy &amp; Paste</span> or <span class="draganddrop">Drag &amp; Drop</span> <br>
+            <div class="file-upload-container">
+              <label class="file-upload-label button confirm">
+                Or Select Image
+                <input class="file-upload" type="file" accept="image/*">
+              </label>
+              <input type="text" readonly class="file-upload-text" value="/path/to/my/file.png"/> 
+            </div>
+          </p>
+          <button class="webcam-button hide-small" title="Use your webcam to take a picture"><span class="icon"></span><span class="text">Webcam</span></button>
+        </div>
+        <div class="mobile-splash">
+          <p>
+            Tap to upload an image
+          </p>
+        </div>
+      </div>
+      <div class="not-supported">
+        <p>
+          This browser is not supported because of missing HTML5 features.
+        </p>
+      </div>
+    </section>
+    <!-- <div class="ad-container ad-container-bottom">
+      <div class="gad">
+        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <ins class="adsbygoogle"
+            style="display:block"
+            data-ad-client="ca-pub-7940233671791385"
+            data-ad-slot="2259557841"
+            data-ad-format="auto"
+            data-full-width-responsive="true"></ins>
+        <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div> -->
+    <section class="about">
+      <div class="about-sidebar about-sidebar-left">
+      </div>
+      <div class="about-content">
+        <h2>Simple and fast image sharing</h2>
+        <p>
+            Pasteboard is the best way to share your screenshots and images online. It supports images of the formats JPEG, PNG, GIF, APNG and TIFF up to 10MB.
+        </p>
+        <!-- <div class="ad-container ad-container-about">
+          <div class="gad">
+            <ins class="adsbygoogle"
+                  style="display:block"
+                  data-ad-client="ca-pub-7940233671791385"
+                  data-ad-slot="3489203276"
+                  data-ad-format="auto"
+                  data-full-width-responsive="true"></ins>
+            <script>
+            (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div> -->
+        <div class="nad" id="main-content-top" style="max-height: 300px;"></div>
+        <script type="text/javascript">
+        nads.createAd('main-content-top', {
+          "floor": 0.05,
+          "refreshLimit": 10,
+          "refreshTime": 60,
+          "report": {
+            "enabled": true,
+            "wording": "Report Ad",
+            "position": "fixed-bottom-right"
+          }
+        });
+        </script>
+        <div class="features">
+          <h2>Features</h2>
+          <div class="features-content">
+            <div class="feature feature-clipboard">
+              <img src="/images/features/clipboard.png">
+              <div class="feature-text">
+                <h3>Copy &amp; Paste</h3> 
+                <p>
+                  Insert images directly from your clipboard.
+                </p>
+              </div>
+            </div>
+            <div class="feature feature-drag">
+              <img src="/images/features/drag.png">
+              <div class="feature-text">
+                <h3>Drag &amp; Drop</h3> 
+                <p>
+                  Drag and drop files from your computer.
+                </p>
+              </div>
+            </div>
+            <div class="feature feature-mobile">
+              <img src="/images/features/mobile.png">
+              <div class="feature-text">
+                <h3>Mobile</h3> 
+                <p>
+                  Upload from your stored photos or capture a new one without leaving the website.
+                </p>
+              </div>
+            </div>
+            <div class="feature feature-webcam">
+              <img src="/images/features/webcam.png">
+              <div class="feature-text">
+                <h3>Webcam</h3> 
+                <p>
+                  Snap a picture using your webcam.
+                </p>
+              </div>
+            </div>
+            <div class="feature feature-forever">
+              <img src="/images/features/forever.png">
+              <div class="feature-text">
+                <h3>Stored Forever</h3> 
+                <p>
+                  Images that you upload will never expire on the website.
+                </p>
+              </div>
+            </div>
+            <div class="feature feature-crop">
+              <img src="/images/features/crop.png">
+              <div class="feature-text">
+                <h3>Cropping</h3> 
+                <p>
+                  Use the built-in tools to crop
+                  a portion of the image. The rest is never uploaded.
+                </p>
+              </div>
+            </div>
+            <div class="feature feature-anonymous">
+              <img src="/images/features/anonymous.png">
+              <div class="feature-text">
+                <h3>Anonymous</h3> 
+                <p>
+                  Decide who you share your images with. Uploads are never discoverable by themselves.  
+                </p>
+              </div>
+            </div>
+            <div class="feature feature-write">
+              <img src="/images/features/write.png">
+              <div class="feature-text">
+                <h3>Express Yourself</h3> 
+                <p>
+                  Add a title and desription
+                  to provide more context
+                  to your images.
+                </p>
+              </div>
+            </div>
+            <div class="feature feature-analytics">
+              <img src="/images/features/analytics.png">
+              <div class="feature-text">
+                <h3>Analytics</h3> 
+                <p>
+                  See how many viewers your
+                  image has had.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-sidebar about-sidebar-right">
+          <div class="nad" id="main-bottom-side" style="max-width: 300px;"></div>
+          <script type="text/javascript">
+          nads.createAd('main-bottom-side', {
+            "floor": 0.05,
+            "refreshLimit": 10,
+            "refreshTime": 60,
+            "report": {
+              "enabled": true,
+              "wording": "Report Ad",
+              "position": "fixed-bottom-right"
+            }
+          });
+          </script>
+      </div>
+    </section>
+    <div class="link-bar">
+      
+   </div>
+   <div class="below-image-ad-container">
+    <div class="nad" id="main-below-image" style="max-height: 100px;"></div>
+   </div>
+    <footer>
+        <div class="box box-left">
+          <h1 class="title"><a href="/"><strong>Pasteboard</strong><span class="small">Easy Image Uploads</span></a></h1>
+        </div>
+        <div class="box box-right">
+          <span data-ccpa-link="1" class="ccpa"></span>
+          <a href="/advertise" class="ad-link">Advertise</a>
+          <span>&middot;</span>
+          <a href="/terms" class="terms-link">Terms &amp; Policy</a>
+        </div>
+      </footer>
+
+      <script type="text/javascript">
+        nads.createAd('mobile-anchor-main', {
+          "floor": 0.05,
+          "refreshLimit": 10,
+          "refreshTime": 60,
+          "format": "anchor"
+        });
+        </script>
+    <script src='/js/main-a16deec64815f38d4de35880465ac697.js'></script>
+  </body>
+</html>
